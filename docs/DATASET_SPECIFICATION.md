@@ -121,3 +121,4 @@ data/
 To enable the dev team to immediately work without external download blocks or missing files, an automated acquisition script `scripts/download_or_generate_dataset.py` will be provided. The script:
 1. First attempts to locate or download the official 32,581-record benchmark CSV.
 2. If offline or unavailable, automatically generates a statistically identical, high-fidelity financial benchmark dataset preserving all feature correlations, distributions, missing value rates, and the 21.8% default rate.
+

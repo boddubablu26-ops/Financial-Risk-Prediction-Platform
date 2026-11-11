@@ -1,0 +1,32 @@
+{
+  "Logistic Regression": {
+    "tn": 4365,
+    "fp": 730,
+    "fn": 89,
+    "tp": 1332
+  },
+  "Decision Tree": {
+    "tn": 4201,
+    "fp": 894,
+    "fn": 99,
+    "tp": 1322
+  },
+  "Random Forest": {
+    "tn": 4178,
+    "fp": 917,
+    "fn": 70,
+    "tp": 1351
+  },
+  "XGBoost Classifier": {
+    "tn": 4267,
+    "fp": 828,
+    "fn": 84,
+    "tp": 1337
+  },
+  "Support Vector Machine": {
+    "tn": 4241,
+    "fp": 854,
+    "fn": 107,
+    "tp": 1314
+  }
+}

@@ -21,7 +21,7 @@ Selecting an appropriate dataset is critical for training machine learning model
 | **Class Imbalance** | 30% default (Artificially high) | 6.7% default (Severely skewed) | **21.8% High Risk / Default (Reflects prime/subprime lending reality)** |
 | **Explainability Alignment** | Poor (Abstract numerical codes) | Moderate (Feature names require mapping) | **High (Direct mapping to DTI, utilization, credit history, delinquencies)** |
 | **Modern Currency Scales** | Deutsche Marks (Obsolete) | USD (Dated scales) | **Modern USD purchasing power & realistic debt-to-income scales** |
-| **Decision** | ❌ Rejected | ⚠️ Secondary Baseline |  **Selected Primary Benchmark** |
+| **Decision** | Rejected | Secondary Baseline | **Selected Primary Benchmark** |
 
 ### 1.2 Selected Benchmark Specification
 The selected dataset combines the high-fidelity structure of the **Modern Credit Risk Benchmark** with enriched consumer debt metrics. It reflects a multi-product consumer and small business lending environment, capturing borrower demographics, employment tenure, income, loan specifications, historical credit bureau ratings, and past delinquency behavior.
@@ -74,10 +74,10 @@ flowchart LR
 
 | Probability Range | Risk Category Label | Dashboard Badge Color | Underwriting Recommendation |
 | :---: | :---: | :---: | :--- |
-| $p < 0.25$ | **Low Risk (Prime)** | 🟢 Green (`#28a745`) | Auto-approve; prime interest rate tier. |
-| $0.25 \le p < 0.45$ | **Moderate Risk (Near-Prime)** | 🟡 Yellow (`#ffc107`) | Approve; standard rate and monitoring. |
-| $0.45 \le p < 0.70$ | **Elevated Risk (Subprime)** | 🟠 Orange (`#fd7e14`) | Escalate to human underwriter; request proof of assets. |
-| $p \ge 0.70$ | **High Risk (Deep Subprime)** | 🔴 Red (`#dc3545`) | Adverse action; issue formal FCRA reason statement. |
+| $p < 0.25$ | **Low Risk (Prime)** | Green (`#28a745`) | Auto-approve; prime interest rate tier. |
+| $0.25 \le p < 0.45$ | **Moderate Risk (Near-Prime)** | Yellow (`#ffc107`) | Approve; standard rate and monitoring. |
+| $0.45 \le p < 0.70$ | **Elevated Risk (Subprime)** | Orange (`#fd7e14`) | Escalate to human underwriter; request proof of assets. |
+| $p \ge 0.70$ | **High Risk (Deep Subprime)** | Red (`#dc3545`) | Adverse action; issue formal FCRA reason statement. |
 
 ---
 

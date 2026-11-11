@@ -1,0 +1,62 @@
+{
+  "clean_report": {
+    "rows_in": 32581,
+    "rows_out": 32576,
+    "dropped_duplicates": 0,
+    "dropped_age": 5,
+    "dropped_income": 0,
+    "dropped_amount": 0,
+    "dropped_category": 0,
+    "dropped_target": 0,
+    "clamped_employment": 0,
+    "clamped_credit_history": 0,
+    "winsorized_interest": 0,
+    "winsorized_income": 0,
+    "retention_rate": 0.999847
+  },
+  "split": {
+    "train_rows": 26060,
+    "test_rows": 6516,
+    "train_default_rate": 0.2180353031465848,
+    "test_default_rate": 0.21807857581338244,
+    "absolute_rate_gap": 4.327266679762798e-05
+  },
+  "imputer": {
+    "employment_median_by_age_bracket": {
+      "le_25": 2.0,
+      "26_35": 3.1,
+      "36_45": 3.1,
+      "46_60": 3.4,
+      "61_plus": 3.3
+    },
+    "employment_global_median": 2.7,
+    "interest_rate_median_by_grade": {
+      "A": 7.48,
+      "B": 10.82,
+      "C": 13.22,
+      "D": 15.48,
+      "E": 17.81,
+      "F": 19.68,
+      "G": 21.325
+    },
+    "interest_rate_global_median": 10.88,
+    "enriched_medians": {}
+  },
+  "feature_selection_top_k": [
+    "financial_stress_score",
+    "loan_int_rate",
+    "interest_burden_index",
+    "payment_to_income",
+    "historical_risk_weight",
+    "loan_to_income_ratio",
+    "disposable_income",
+    "person_income",
+    "loan_amnt",
+    "delinq_severity_index",
+    "default_on_file_binary",
+    "person_age",
+    "person_emp_length",
+    "cb_person_cred_hist_length",
+    "cred_hist_age_ratio"
+  ]
+}

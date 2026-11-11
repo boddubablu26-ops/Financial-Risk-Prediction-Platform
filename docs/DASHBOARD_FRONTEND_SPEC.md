@@ -167,22 +167,22 @@ import joblib
 
 st.set_page_config(
     page_title="Financial Risk Prediction Platform",
-    page_icon="ðŸ’³",
+    page_icon=":material/monitoring:",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Custom header
-st.title("ðŸ’³ Financial Risk Prediction & Analytics Platform")
+st.title("Financial Risk Prediction & Analytics Platform")
 st.caption("Production Machine Learning System for Credit Risk Underwriting & Explainable AI")
 
 # Tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "ðŸ“Š Overview",
-    "ðŸ”¬ Data Analysis (EDA)",
-    "âš–ï¸ Model Performance",
-    "ðŸ§® Risk Prediction",
-    "ðŸ” Explainability & Audit"
+    "Overview",
+    "Data Analysis (EDA)",
+    "Model Performance",
+    "Risk Prediction",
+    "Explainability & Audit"
 ])
 
 with tab1:

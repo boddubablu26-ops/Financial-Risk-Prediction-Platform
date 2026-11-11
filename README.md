@@ -4,21 +4,21 @@ An end-to-end enterprise machine learning platform for assessing credit default 
 
 ---
 
-## 📖 Complete Documentation
+## Complete Documentation
 
 The complete project specification, architecture blueprints, data dictionaries, ML designs, and implementation trackers are maintained in the [`docs/`](docs/) directory:
 
-- 📋 [**Product Requirements Document (PRD)**](docs/PRD.md)
-- 🏗️ [**System Architecture & Technical Design**](docs/ARCHITECTURE.md)
-- 📊 [**Dataset Specification & Benchmark Guide**](docs/DATASET_SPECIFICATION.md)
-- 🧠 [**Machine Learning Pipeline Design**](docs/ML_PIPELINE_DESIGN.md)
-- 🔌 [**API & Dashboard Specifications**](docs/API_AND_DASHBOARD_SPECS.md)
-- ✅ [**Implementation Tracker & Verification Matrix**](docs/TRACKER.md)
-- 🛠️ [**Developer Setup & Execution Guide**](docs/DEVELOPMENT_GUIDE.md)
+- [**Product Requirements Document (PRD)**](docs/PRD.md)
+- [**System Architecture & Technical Design**](docs/ARCHITECTURE.md)
+- [**Dataset Specification & Benchmark Guide**](docs/DATASET_SPECIFICATION.md)
+- [**Machine Learning Pipeline Design**](docs/ML_PIPELINE_DESIGN.md)
+- [**API & Dashboard Specifications**](docs/API_AND_DASHBOARD_SPECS.md)
+- [**Implementation Tracker & Verification Matrix**](docs/TRACKER.md)
+- [**Developer Setup & Execution Guide**](docs/DEVELOPMENT_GUIDE.md)
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Setup Virtual Environment
 ```powershell
@@ -51,7 +51,7 @@ Visit Dashboard: `http://localhost:8501`
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 project 3/
@@ -70,3 +70,4 @@ project 3/
 ├── tests/                     # Unit, integration, and API tests
 └── requirements.txt           # Pinned project dependencies
 ```
+

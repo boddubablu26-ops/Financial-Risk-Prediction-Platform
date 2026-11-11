@@ -160,12 +160,12 @@ flowchart TD
   - CSV file uploader for batch scoring with instant download of enriched files.
 - **Core Modules:**
   - `app.py`: Main dashboard entry point and navigation sidebar.
-  - `pages/`:
-    - `1_Overview.py`: Executive KPIs and portfolio risk overview.
-    - `2_EDA.py`: Interactive exploratory analysis, correlations, distributions.
-    - `3_Model_Comparison.py`: Metrics leaderboard, ROC curves, confusion matrices.
-    - `4_Risk_Prediction.py`: Applicant scoring form and batch processor.
-    - `5_Explainability.py`: Global feature importance and individual SHAP waterfall plots.
+  - `views/`:
+    - `overview.py`: Executive KPIs and portfolio risk overview.
+    - `data_analysis.py`: Interactive exploratory analysis, correlations, distributions.
+    - `model_performance.py`: Metrics leaderboard, ROC curves, confusion matrices.
+    - `risk_prediction.py`: Applicant scoring form and batch processor.
+    - `explainability.py`: Global feature importance and individual SHAP waterfall plots.
 
 ---
 
@@ -252,3 +252,4 @@ sequenceDiagram
    - Range validation bounds rejecting impossible inputs (e.g., negative employment lengths).
 4. **Regulatory Transparency:**
    - Predictions are never opaque "black boxes"; every high-risk classification is accompanied by signed SHAP attribution vectors detailing exact feature contributions.
+

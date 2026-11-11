@@ -129,12 +129,12 @@ project 3/
 │   │       └── models.py
 │   └── dashboard/                      # Streamlit interactive application
 │       ├── app.py                      # Main entrypoint
-│       └── pages/
-│           ├── 1_📊_Overview.py
-│           ├── 2_🔍_Data_Analysis.py
-│           ├── 3_🏆_Model_Performance.py
-│           ├── 4_🎯_Risk_Prediction.py
-│           └── 5_💡_Explainability.py
+│       └── views/
+│           ├── overview.py
+│           ├── data_analysis.py
+│           ├── model_performance.py
+│           ├── risk_prediction.py
+│           └── explainability.py
 ├── scripts/                            # Helper and utility scripts
 │   └── download_or_generate_dataset.py # Automated benchmark dataset acquisition
 ├── tests/                              # Automated test suite
@@ -222,3 +222,4 @@ pytest --cov=src tests/ --cov-report=term-missing
 - **Type Annotations:** All functions must have explicit type annotations for parameters and return types (e.g. `def predict_risk(data: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:`).
 - **Docstrings:** Use Google-style docstrings for all classes and public functions.
 - **Random Seeds:** Always set `random_state=42` across all scikit-learn, XGBoost, and train_test_split functions to ensure deterministic execution.
+

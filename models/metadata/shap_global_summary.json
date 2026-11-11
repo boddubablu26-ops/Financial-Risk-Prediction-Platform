@@ -1,0 +1,97 @@
+{
+  "status": "ok",
+  "sample_rows": 300,
+  "base_value": -1.532862,
+  "ranking": [
+    {
+      "feature": "loan_grade",
+      "mean_abs_shap": 2.003188
+    },
+    {
+      "feature": "person_home_ownership",
+      "mean_abs_shap": 1.132538
+    },
+    {
+      "feature": "payment_to_income",
+      "mean_abs_shap": 0.823895
+    },
+    {
+      "feature": "financial_stress_score",
+      "mean_abs_shap": 0.814359
+    },
+    {
+      "feature": "default_on_file_binary",
+      "mean_abs_shap": 0.334212
+    },
+    {
+      "feature": "cb_person_cred_hist_length",
+      "mean_abs_shap": 0.3169
+    },
+    {
+      "feature": "loan_int_rate",
+      "mean_abs_shap": 0.300242
+    },
+    {
+      "feature": "person_emp_length",
+      "mean_abs_shap": 0.274969
+    },
+    {
+      "feature": "loan_to_income_ratio",
+      "mean_abs_shap": 0.25195
+    },
+    {
+      "feature": "interest_burden_index",
+      "mean_abs_shap": 0.200178
+    },
+    {
+      "feature": "cred_hist_age_ratio",
+      "mean_abs_shap": 0.144434
+    },
+    {
+      "feature": "stability_index",
+      "mean_abs_shap": 0.081365
+    },
+    {
+      "feature": "person_age",
+      "mean_abs_shap": 0.081028
+    },
+    {
+      "feature": "delinq_severity_index",
+      "mean_abs_shap": 0.055122
+    },
+    {
+      "feature": "loan_intent",
+      "mean_abs_shap": 0.039708
+    },
+    {
+      "feature": "historical_risk_weight",
+      "mean_abs_shap": 0.036761
+    },
+    {
+      "feature": "disposable_income",
+      "mean_abs_shap": 0.020167
+    },
+    {
+      "feature": "loan_amnt",
+      "mean_abs_shap": 0.009724
+    },
+    {
+      "feature": "person_income",
+      "mean_abs_shap": 0.006185
+    },
+    {
+      "feature": "emp_length_missing_flag",
+      "mean_abs_shap": 0.006008
+    }
+  ],
+  "top_features": [
+    "loan_grade",
+    "person_home_ownership",
+    "payment_to_income",
+    "financial_stress_score",
+    "default_on_file_binary",
+    "cb_person_cred_hist_length",
+    "loan_int_rate",
+    "person_emp_length"
+  ]
+}

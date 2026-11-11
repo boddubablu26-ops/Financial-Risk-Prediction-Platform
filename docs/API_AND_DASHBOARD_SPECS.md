@@ -169,20 +169,20 @@ The frontend is implemented as a modular multi-page Streamlit application locate
 
 ```
 src/dashboard/
-├── app.py                      # Main entrypoint, global styling & sidebar branding
-└── pages/
-    ├── 1_📊_Overview.py        # Executive summary, KPI metrics, portfolio breakdown
-    ├── 2_🔍_Data_Analysis.py   # Exploratory Data Analysis (EDA) & distribution plots
-    ├── 3_🏆_Model_Performance.py # 5-Model Leaderboard, ROC curves, confusion matrices
-    ├── 4_🎯_Risk_Prediction.py  # Interactive borrower form & Batch CSV uploader
-    └── 5_💡_Explainability.py  # Global SHAP beeswarm & Local applicant waterfall
+├── app.py                      # Main entrypoint, Material icon navigation
+└── views/
+    ├── overview.py             # Executive summary, KPI metrics, portfolio breakdown
+    ├── data_analysis.py        # Exploratory Data Analysis (EDA) & distribution plots
+    ├── model_performance.py    # 5-Model Leaderboard, ROC curves, confusion matrices
+    ├── risk_prediction.py      # Interactive borrower form & Batch CSV uploader
+    └── explainability.py       # Global SHAP beeswarm & Local applicant waterfall
 ```
 
 ---
 
 ### 2.2 Detailed Page Specifications
 
-#### Page 1: Overview Dashboard (`1_📊_Overview.py`)
+#### Page 1: Overview Dashboard (`overview.py`)
 - **Top Metric Cards:**
   - *Total Records Analyzed:* `32,581`
   - *Portfolio Default Rate:* `21.8%`
@@ -193,7 +193,7 @@ src/dashboard/
   - Breakdown by Loan Intent (Debt Consolidation, Education, Medical, Venture).
   - Quick summary table of key portfolio risks.
 
-#### Page 2: Exploratory Data Analysis (`2_🔍_Data_Analysis.py`)
+#### Page 2: Exploratory Data Analysis (`data_analysis.py`)
 - **Dataset Summary:** Interactive data table showing descriptive statistics (`describe()`).
 - **Missing Value Profile:** Missingness bar chart showing `loan_int_rate` (9.6%) and `person_emp_length` (2.7%).
 - **Interactive Histograms / KDEs:**
@@ -202,7 +202,7 @@ src/dashboard/
 - **Correlation Heatmap:** Interactive correlation matrix highlighting collinearity between Loan Amount, Income, and Loan Grade.
 - **Outlier Box Plots:** Box plots of Loan-to-Income by Loan Status (0 vs 1).
 
-#### Page 3: Model Performance & Comparison (`3_🏆_Model_Performance.py`)
+#### Page 3: Model Performance & Comparison (`model_performance.py`)
 - **Model Leaderboard Table:**
   - Columns: Model Name, Accuracy, Precision, Recall, F1-Score, ROC-AUC, PR-AUC, Status (Champion).
   - Interactive sorting by any metric.
@@ -214,7 +214,7 @@ src/dashboard/
 - **Cost-Sensitive Threshold Optimizer:**
   - Interactive slider for decision threshold (0.10 to 0.70) showing dynamically updated financial loss curve.
 
-#### Page 4: Risk Prediction & Scoring (`4_🎯_Risk_Prediction.py`)
+#### Page 4: Risk Prediction & Scoring (`risk_prediction.py`)
 - **Tab 1: Single Applicant Risk Scoring:**
   - Input form split into columns:
     - *Personal Profile:* Age (18-100), Annual Income ($), Home Ownership (Dropdown), Employment Length (Years).
@@ -231,7 +231,7 @@ src/dashboard/
   - Summary metrics: Total Scored, % Flagged High Risk.
   - Download Button: `"Download Scored CSV with Risk Probabilities"`.
 
-#### Page 5: Explainability Studio (`5_💡_Explainability.py`)
+#### Page 5: Explainability Studio (`explainability.py`)
 - **Global Explainability Section:**
   - SHAP Summary Beeswarm plot: Displays top 10 features and whether higher or lower values increase risk.
   - Mean Absolute SHAP feature importance bar plot.
@@ -256,3 +256,4 @@ src/dashboard/
   - Clean typography, high contrast, responsive grid layouts.
   - Zero jargon in user-facing recommendation badges.
   - Clear visual demarcation between training metrics and live inference.
+

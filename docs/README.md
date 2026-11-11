@@ -5,7 +5,7 @@ Welcome to the technical documentation repository for the **Financial Risk Predi
 
 ---
 
-## 📚 Core System Specifications
+## Core System Specifications
 
 | Document | Description | Key Topics Covered |
 | :--- | :--- | :--- |
@@ -19,23 +19,23 @@ Welcome to the technical documentation repository for the **Financial Risk Predi
 
 ---
 
-## 🔬 Deep-Dive Module Specifications
+## Deep-Dive Module Specifications
 
 For specialized engineering assignments, deep-dive specifications are also available:
 
-- 📊 [**DATASET_AND_DATA_DICTIONARY.md**](DATASET_AND_DATA_DICTIONARY.md): Granular statistical distributions, variable encodings, and domain metrics.
-- 🧹 [**DATA_PIPELINE_AND_PREPROCESSING_SPEC.md**](DATA_PIPELINE_AND_PREPROCESSING_SPEC.md): Zero-leakage data cleaning, imputation, and validation specs.
-- 🧮 [**FEATURE_ENGINEERING_SPEC.md**](FEATURE_ENGINEERING_SPEC.md): Mathematical formulations for financial debt-to-income and burden indices.
-- 🤖 [**ML_MODELING_AND_EVALUATION_SPEC.md**](ML_MODELING_AND_EVALUATION_SPEC.md): Hyperparameter tuning grids, cost-sensitive loss curves, and evaluation matrices.
-- 🔍 [**MODEL_EXPLAINABILITY_SHAP_SPEC.md**](MODEL_EXPLAINABILITY_SHAP_SPEC.md): SHAP TreeExplainer, waterfall decomposition, and compliance reporting.
-- 🌐 [**API_BACKEND_SPEC.md**](API_BACKEND_SPEC.md): Pydantic request/response schemas and ASGI deployment architecture.
-- 🖥️ [**DASHBOARD_FRONTEND_SPEC.md**](DASHBOARD_FRONTEND_SPEC.md): Page-by-page Streamlit wireframes, reactive state management, and UX design.
-- 🚀 [**SYSTEM_ARCHITECTURE_AND_DEPLOYMENT_GUIDE.md**](SYSTEM_ARCHITECTURE_AND_DEPLOYMENT_GUIDE.md): Production containerization, health checks, and CI/CD pipelines.
-- 📋 [**PROJECT_TRACKER.md**](PROJECT_TRACKER.md): Extended sprint backlog and quality checklist.
+- [**DATASET_AND_DATA_DICTIONARY.md**](DATASET_AND_DATA_DICTIONARY.md): Granular statistical distributions, variable encodings, and domain metrics.
+- [**DATA_PIPELINE_AND_PREPROCESSING_SPEC.md**](DATA_PIPELINE_AND_PREPROCESSING_SPEC.md): Zero-leakage data cleaning, imputation, and validation specs.
+- [**FEATURE_ENGINEERING_SPEC.md**](FEATURE_ENGINEERING_SPEC.md): Mathematical formulations for financial debt-to-income and burden indices.
+- [**ML_MODELING_AND_EVALUATION_SPEC.md**](ML_MODELING_AND_EVALUATION_SPEC.md): Hyperparameter tuning grids, cost-sensitive loss curves, and evaluation matrices.
+- [**MODEL_EXPLAINABILITY_SHAP_SPEC.md**](MODEL_EXPLAINABILITY_SHAP_SPEC.md): SHAP TreeExplainer, waterfall decomposition, and compliance reporting.
+- [**API_BACKEND_SPEC.md**](API_BACKEND_SPEC.md): Pydantic request/response schemas and ASGI deployment architecture.
+- [**DASHBOARD_FRONTEND_SPEC.md**](DASHBOARD_FRONTEND_SPEC.md): Page-by-page Streamlit wireframes, reactive state management, and UX design.
+- [**SYSTEM_ARCHITECTURE_AND_DEPLOYMENT_GUIDE.md**](SYSTEM_ARCHITECTURE_AND_DEPLOYMENT_GUIDE.md): Production containerization, health checks, and CI/CD pipelines.
+- [**PROJECT_TRACKER.md**](PROJECT_TRACKER.md): Extended sprint backlog and quality checklist.
 
 ---
 
-## 🏛️ Architecture Snapshot
+## Architecture Snapshot
 
 ```
                        ┌─────────────────────────┐
@@ -43,39 +43,39 @@ For specialized engineering assignments, deep-dive specifications are also avail
                        │ (32,581 Benchmark CSV)  │
                        └────────────┬────────────┘
                                     │
-                                    ▼
+                                    
                        ┌─────────────────────────┐
                        │ Ingestion & Validation  │
                        │    (Data Cleaner)       │
                        └────────────┬────────────┘
                                     │
-                                    ▼
+                                    
                        ┌─────────────────────────┐
                        │ Preprocessing Pipeline  │
                        │(Ratios + Encode + Scale)│
                        └────────────┬────────────┘
                                     │
-                                    ▼
+                                    
                        ┌─────────────────────────┐
                        │   Multi-Model Engine    │
                        │(5 Models + 5-Fold CV)   │
                        └────────────┬────────────┘
                                     │
-                                    ▼
+                                    
                        ┌─────────────────────────┐
                        │ Evaluation & Cost Matrix│
                        │ (Champion Optimization) │
                        └────────────┬────────────┘
                                     │
                       ┌─────────────┴─────────────┐
-                      ▼                           ▼
+                                                 
           ┌───────────────────────┐   ┌───────────────────────┐
           │  FastAPI REST Server  │   │  Streamlit Dashboard  │
           │   (/predict, /explain)│   │  (5 Analytical Pages) │
           └───────────┬───────────┘   └───────────┬───────────┘
                       │                           │
                       └─────────────┬─────────────┘
-                                    ▼
+                                    
                        ┌─────────────────────────┐
                        │ Explainability Engine   │
                        │ (SHAP Local & Global)   │
@@ -84,7 +84,7 @@ For specialized engineering assignments, deep-dive specifications are also avail
 
 ---
 
-## 🎯 Quick Navigation for Developers
+## Quick Navigation for Developers
 
 - **To understand the product goals & scope:** Read [`docs/PRD.md`](PRD.md).
 - **To understand the system structure & design patterns:** Read [`docs/ARCHITECTURE.md`](ARCHITECTURE.md).

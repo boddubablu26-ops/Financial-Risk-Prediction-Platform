@@ -1,0 +1,128 @@
+{
+  "top_k": 15,
+  "selected_features": [
+    "financial_stress_score",
+    "loan_int_rate",
+    "interest_burden_index",
+    "payment_to_income",
+    "historical_risk_weight",
+    "loan_to_income_ratio",
+    "disposable_income",
+    "person_income",
+    "loan_amnt",
+    "delinq_severity_index",
+    "default_on_file_binary",
+    "person_age",
+    "person_emp_length",
+    "cb_person_cred_hist_length",
+    "cred_hist_age_ratio"
+  ],
+  "ranking": [
+    {
+      "feature": "financial_stress_score",
+      "mutual_information": 0.16191
+    },
+    {
+      "feature": "loan_int_rate",
+      "mutual_information": 0.146027
+    },
+    {
+      "feature": "interest_burden_index",
+      "mutual_information": 0.120997
+    },
+    {
+      "feature": "payment_to_income",
+      "mutual_information": 0.061498
+    },
+    {
+      "feature": "historical_risk_weight",
+      "mutual_information": 0.058099
+    },
+    {
+      "feature": "loan_to_income_ratio",
+      "mutual_information": 0.057453
+    },
+    {
+      "feature": "disposable_income",
+      "mutual_information": 0.040887
+    },
+    {
+      "feature": "person_income",
+      "mutual_information": 0.034017
+    },
+    {
+      "feature": "loan_amnt",
+      "mutual_information": 0.018411
+    },
+    {
+      "feature": "delinq_severity_index",
+      "mutual_information": 0.017941
+    },
+    {
+      "feature": "default_on_file_binary",
+      "mutual_information": 0.017589
+    },
+    {
+      "feature": "person_age",
+      "mutual_information": 0.002449
+    },
+    {
+      "feature": "person_emp_length",
+      "mutual_information": 0.001918
+    },
+    {
+      "feature": "cb_person_cred_hist_length",
+      "mutual_information": 0.000936
+    },
+    {
+      "feature": "cred_hist_age_ratio",
+      "mutual_information": 0.0
+    },
+    {
+      "feature": "stability_index",
+      "mutual_information": 0.0
+    },
+    {
+      "feature": "emp_length_missing_flag",
+      "mutual_information": 0.0
+    }
+  ],
+  "collinear_pairs": [
+    {
+      "feature_a": "person_income",
+      "feature_b": "disposable_income",
+      "abs_correlation": 0.999
+    },
+    {
+      "feature_a": "loan_to_income_ratio",
+      "feature_b": "payment_to_income",
+      "abs_correlation": 0.9968
+    },
+    {
+      "feature_a": "cb_person_cred_hist_length",
+      "feature_b": "cred_hist_age_ratio",
+      "abs_correlation": 0.9441
+    },
+    {
+      "feature_a": "interest_burden_index",
+      "feature_b": "payment_to_income",
+      "abs_correlation": 0.9382
+    },
+    {
+      "feature_a": "loan_to_income_ratio",
+      "feature_b": "interest_burden_index",
+      "abs_correlation": 0.9111
+    },
+    {
+      "feature_a": "default_on_file_binary",
+      "feature_b": "delinq_severity_index",
+      "abs_correlation": 0.9059
+    },
+    {
+      "feature_a": "historical_risk_weight",
+      "feature_b": "default_on_file_binary",
+      "abs_correlation": 0.8626
+    }
+  ],
+  "note": "All engineered features are retained in the model matrix so tree and linear models see the same inputs. Pairs with |r| >= 0.85 are reported for audit. loan_percent_income is excluded because it duplicates loan_to_income_ratio."
+}
